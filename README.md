@@ -1,6 +1,28 @@
 
-FIRE-CBIR: Step-by-Step Installation Guide
-==========================================
+FIRE-CBIR: Content-Based Image Retrieval
+========================================
+
+<a name="a" id="a">&nbsp;</a>
+
+Acknowledgements
+----------------
+
+This is a fork, maintained by me, fish2000; it is based on [the original research work of Thomas Deselaers](http://thomas.deselaers.de/fire/), which he undertook as part of his [thesis work](http://thomas.deselaers.de/publications/papers/deselaers_diploma03.pdf) [PDF] at [a university
+whose name I can't even dream of pronouncing without butchering it somehow](http://www.rwth-aachen.de). My copy of the codebase came from [the FIRE-CBIR Google Code repository](http://code.google.com/p/fire-cbir/).
+
+Please see [Dr. Deselaers' FIRE-CBIR site](http://thomas.deselaers.de/fire/) for a full list of the many
+talented contributors to this fine codebase. It is their wish that users of FIRE-CBIR will cite their work with this formal citation:
+
+> Deselaers, T., Keysers, D., Ney, H.,  "Features for Image Retrieval: An Experimental Comparison",  Information Retrieval, vol. 11, issue 2, The Netherlands, Springer, pp. 77-107, 03/2008.
+
+See [CITATIONS.txt](https://github.com/fish2000/fire-cbir/blob/master/CITATIONS.txt) for a complete bibliographical excerpt.
+
+<a name="h" id="h">&nbsp;</a>
+
+How To Install FIRE-CBIR: A Step-By-Step Guide
+==============================================
+
+*Adapted from http://code.google.com/p/fire-cbir/wiki/FIREUbuntu104*
 
 
 <a name="i" id="i">&nbsp;</a>
