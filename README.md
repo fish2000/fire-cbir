@@ -215,7 +215,7 @@ Editor's notes:
 
 <a name="t" id="t">&nbsp;</a>
 
-† I am pretty confident that [http://www.modpython.org](the late mod_python), or something like it,
+† I am pretty confident that [the late mod_python](http://www.modpython.org), or something like it,
 is needed in order to deploy Python code by plopping some of it into a CGI directory, as per the
 FIRE-CBIR author's directive. I don't know about that stuff (I'm more of a WSGI gunicorn-y type guy,
 personally) but I'd wager you'll investigate that, like as like a part of the same content-based
@@ -225,7 +225,7 @@ journey through the forgotten world of image retrieval, upon which you and I are
 <a name="tt" id="tt">&nbsp;</a>
 
 †† These were provided by google code users. I cleaned them up a little bit but it was all
-[http://code.google.com/p/fire-cbir/wiki/FIREUbuntu104](like that when I got here), basically.
+[like that when I got here](http://code.google.com/p/fire-cbir/wiki/FIREUbuntu104), basically.
 <a href="#ff">§ BACK TO TEXT</a>
 
 
