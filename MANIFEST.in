@@ -1,0 +1,9 @@
+exclude *.pyc *~ .DS_Store
+
+include .gitignore
+include compiling.html
+include CITATIONS.txt
+include README.md
+
+recursive-include fire-cbir *
+recursive-include tarballs *

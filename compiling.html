@@ -1,0 +1,881 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/fire-cbir/wiki/FIREUbuntu104" />
+ 
+ <script type="text/javascript">
+ 
+ (function(){var a=function(b){this.t={};this.tick=function(b,c,d){c=void 0!=d?d:(new Date).getTime();this.t[b]=c};this.tick("start",null,b)},e=new a;window.jstiming={Timer:a,load:e};try{var f=null;window.chrome&&window.chrome.csi&&(f=Math.floor(window.chrome.csi().pageT));null==f&&window.gtbExternal&&(f=window.gtbExternal.pageT());null==f&&window.external&&(f=window.external.pageT);f&&(window.jstiming.pt=f)}catch(g){};})();
+
+ 
+ 
+ 
+ 
+ var codesite_token = "dEhhYsaPA8-bJ6KLD1I4fCl-mJY:1345398268373";
+ 
+ 
+ var CS_env = {"profileUrl":["/u/108316936178159119100/"],"token":"dEhhYsaPA8-bJ6KLD1I4fCl-mJY:1345398268373","assetHostPath":"http://www.gstatic.com/codesite/ph","domainName":null,"assetVersionPath":"http://www.gstatic.com/codesite/ph/8909294867742213046","projectHomeUrl":"/p/fire-cbir","relativeBaseUrl":"","projectName":"fire-cbir","loggedInUserEmail":"fish2000@gmail.com"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-2953736-7'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>FIREUbuntu104 - 
+ fire-cbir -
+ 
+ Step-by-step instruction to compile FIRE on Ubuntu 10.4. - 
+ FIRE - Flexible Image Retrieval Engine - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/8909294867742213046/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/8909294867742213046/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="/feeds/p/fire-cbir/svnchanges/basic?path=/wiki/FIREUbuntu104.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/8909294867742213046/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="#" id="multilogin-dropdown" onclick="return false;"
+ ><u><b>fish2000@gmail.com</b></u> <small>&#9660;</small></a>
+ 
+ 
+ | <a href="/u/108316936178159119100/" id="projects-dropdown" onclick="return false;"
+ ><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="/u/108316936178159119100/" onclick="_CS_click('/gb/ph/profile');"
+ title="Profile, Updates, and Settings"
+ ><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=http%3A%2F%2Fcode.google.com%2Fp%2Ffire-cbir%2Fwiki%2FFIREUbuntu104" 
+ onclick="_CS_click('/gb/ph/signout');"
+ ><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ <td id="plogo">
+ <link itemprop="url" href="/p/fire-cbir">
+ <a href="/p/fire-cbir/">
+ 
+ 
+ <img src="/p/fire-cbir/logo?cct=1341655569"
+ alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="/p/fire-cbir/"><span itemprop="name">fire-cbir</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="/p/fire-cbir/"><span itemprop="description">FIRE - Flexible Image Retrieval Engine</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="/p/fire-cbir/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="/p/fire-cbir/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/fire-cbir/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/fire-cbir/issues/list"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/fire-cbir/source/checkout"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/fire-cbir/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5" >&nbsp;My starred pages</option>
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <img width="15" height="15" id="star_img"
+ src="http://www.gstatic.com/codesite/ph/images/star_off.gif"
+ style="cursor:pointer"
+ onclick="_CS_toggleStar(this,
+ {'scope': 'wiki',
+ 'user': '_CURRENT_USER',
+ 'item': 'fire-cbir:FIREUbuntu104'
+ });"/>
+ 
+ <span style="font-size:120%;font-weight:bold">FIREUbuntu104</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Step-by-step instruction to compile FIRE on Ubuntu 10.4.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Mon Jul 26 14:05:43 2010">
+ Jul 26, 2010</span>
+ 
+ by 
+ <a class="userlink"
+ href="/u/118428661560432430931/">desela...@gmail.com</a>
+
+
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p>To facilitate installation, I provide here a description how to compile the FIRE server on Ubuntu 10.4 from scratch. </p><p>The description applies to FIRE V 2.3 (SVN checkout of July 26, 2010). </p><h2><a name="Compiling_FIRE"></a>Compiling FIRE<a href="#Compiling_FIRE" class="section_anchor"></a></h2><ul><li>default Ubuntu 10.4 installation (in May 2010 in virtualbox)  </li><li>upgrade to recent state (sudo apt-get update; sudo apt-get dist-upgrade) on July 26, 2010 </li><li>sudo apt-get install subversion g++ libmagick++-dev </li><li>svn checkout <a href="http://fire-cbir.googlecode.com/svn/trunk/" rel="nofollow">http://fire-cbir.googlecode.com/svn/trunk/</a> fire-cbir </li><li>cd fire-cbir </li><li>make  </li></ul><p>After that the bin-Directory contain a total of 47 binaries and the FIRE server is ready to use. </p><h2><a name="Integration_with_Apache"></a>Integration with Apache<a href="#Integration_with_Apache" class="section_anchor"></a></h2><ul><li>sudo apt-get install apache2 </li><li>cd ~/fire-cbir/ </li><li>sudo cp Python/firesocket.py /usr/lib/cgi-bin </li><li>cd WebInterface </li><li>sudo cp fire.py feature.py img.py config.py fire-template.html /usr/lib/cgi-bin </li><li>sudo mkdir /usr/lib/cgi-bin/images </li><li>sudo cp neutral.png positive.png negative.png fire-logo.png i6.png /usr/lib/cgi-bin/images </li></ul><p>Now all the files should be in place for the FIRE webinterface to work </p><h2><a name="Setting_up_a_dataset"></a>Setting up a dataset<a href="#Setting_up_a_dataset" class="section_anchor"></a></h2><ul><li>create a directory mkdir ~/fire-img </li><li>put a set of medium sized images (e.g. 500x500 pixels) into this directory. For a start use about 100 images. </li><li>convert all images into jpg (not necessary but often avoids problems)  </li><ul><li>cd ~/fire-img </li><li>mogrify -format jpg <tt>*</tt> </li></ul><li>extract color histograms </li><ul><li>~/fire-cbir/bin/extractcolorhistograms --color --images ~/fire-img/<tt>*</tt>.jpg  </li></ul><li>create a filelist for this dataset </li><ul><li>cd ~/fire-img/ </li><li>echo FIRE_filelist &gt; filelist </li><li>echo suffix color.histo.gz &gt;&gt; filelist </li><li>echo path this &gt;&gt; filelist </li><li>ls <tt>*</tt>.jpg | sed &#x27;s/^/file /&#x27; &gt;&gt; filelist </li></ul></ul><p>Now you have a dataset where every image is represented using a color histogram. Other features can be added by extracting them and adding the corresponding suffix lines to the filelist. </p><h2><a name="Starting_the_FIRE_server_and_accessing_it_through_the_webinterfa"></a>Starting the FIRE server and accessing it through the webinterface<a href="#Starting_the_FIRE_server_and_accessing_it_through_the_webinterfa" class="section_anchor"></a></h2><ul><li>cd ~/fire-cbir </li><li>./bin/fire -f ~/fire-img/filelist -r 10 </li><li>Access the fire webinterface throught <a href="http://localhost/cgi-bin/fire.py" rel="nofollow">http://localhost/cgi-bin/fire.py</a> </li><li>There you should be able to click an image and get similar images (according to color histograms) </li></ul>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ 
+ <span class="userlink">chenkai0...@hotmail.com</span>
+
+,
+ 
+ </span>
+ <span class="date" title="Tue Jul 27 01:29:16 2010">Jul 27, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hi Thomas, </p><p>Thanks for this doc. It is clear. With it I have succeed in installing FIRE. But there are some bugs in the &#x27;fire.py&#x27;. After access the webinterface through <a href="http://localhost/cgi-bin/fire.py" rel="nofollow">http://localhost/cgi-bin/fire.py</a>, I click the upload form, then I get the message error in the page as follow: </p><p>Traceback (most recent call last): File &quot;/usr/lib/cgi-bin/fire.py&quot;, line 862, in  message+=newFile(form) File &quot;/usr/lib/cgi-bin/fire.py&quot;, line 359, in newFile temporaryFiles=config.tempdir # standard: &quot;/tmp&quot; AttributeError<a href="/p/fire-cbir/w/edit/AttributeError">?</a>: &#x27;module&#x27; object has no attribute &#x27;tempdir&#x27;  </p><p>Do you have some ideas about this ? </p><p>Best Kai </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ <a class="userlink"
+ href="/u/108234195392000486970/">bupt.z...@gmail.com</a>
+
+,
+ 
+ </span>
+ <span class="date" title="Mon Aug  2 20:42:53 2010">Aug 2, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I have the same problem with the above person.If you have same idea about it and have free time,please tell me. thank you! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ <a class="userlink"
+ href="/u/116120157872149676006/">xwj....@gmail.com</a>
+
+,
+ 
+ </span>
+ <span class="date" title="Tue Aug 24 07:52:44 2010">Aug 24, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>hi guys, in &#x27;config.py&#x27;,u should delete &#x27;#&#x27; in front of &#x27;tempdir=&quot;/tmp&quot;&#x27; in line 12; also, u may add a line &#x27;featureurl=&quot;feature.py&quot;&#x27; to keep the system running, but still not sovling the problem, seems something else to be done to run the uploading function. </p><p>i am new to this system. some questions: the page can not display some of the PNG pics, &#x27;negative.png, positive.png,...&#x27;, but logo.png is ok...i dont know why. can anybody help,plz. </p><p>and it can not display the histogram image, a PNG file again, i guess.... </p><p>regards  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ <a class="userlink"
+ href="/u/116388943013203089664/">Queenmar...@gmail.com</a>
+
+,
+ 
+ </span>
+ <span class="date" title="Tue Aug 31 06:27:25 2010">Aug 31, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I click the upload form, then I get the message error in the page as follow: </p><p>Traceback (most recent call last): File &quot;/usr/lib/cgi-bin/fire.py&quot;, line 862, in message+=newFile(form) File &quot;/usr/lib/cgi-bin/fire.py&quot;, line 359, in newFile temporaryFiles=config.tempdir # standard: &quot;/tmp&quot; AttributeError<a href="/p/fire-cbir/w/edit/AttributeError">?</a>?: &#x27;module&#x27; object has no attribute &#x27;tempdir&#x27;  plz help me because this important for me </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ <a class="userlink"
+ href="/u/101552159152780906488/">Dietrich...@gmail.com</a>
+
+,
+ 
+ </span>
+ <span class="date" title="Fri Feb  4 13:10:59 2011">Feb 4, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>If your pictures are not displayed at the localhost webinterface, make sure that your webserver has the proper rights to access your pictures. </p><p>Another hint, to make sure that FIRE really finds similar pictures, the proper command for launching the server should be: ./bin/fire -f ~/fire-img/filelist -D -r 10  </p><p>Regards </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ 
+ <span class="userlink">shindino...@gmail.com</span>
+
+,
+ 
+ </span>
+ <span class="date" title="Wed Mar 23 06:27:08 2011">Mar 23, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>The negative.png is spelled wrong. it is negativ.png, but i still cannot access the localhost webinterface. The terminal ends with: ... (10) Retriever/server.cpp:366:parseConfig? result=10 (10) Retriever/server.cpp:972:start? No proxy (2) Retriever/server.cpp:997:start? Waiting for connections on port 12960 </p><p>so I changed the localhost to that port via localhost:12960/cgi-bin/fire.py but not getting anything </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ 
+ <span class="userlink">fdewe...@gmail.com</span>
+
+,
+ 
+ </span>
+ <span class="date" title="Wed Jun  8 01:12:30 2011">Jun 8, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I have exactly the same problem, have you found where the problem is? </p><p>Thank! </p><p>Best </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ <a class="userlink"
+ href="/u/105721490302463122425/">hustling...@gmail.com</a>
+
+,
+ 
+ </span>
+ <span class="date" title="Thu Jun  9 06:01:11 2011">Jun 9, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Has anyone solved this problem? </p><p>Thanks! </p><p>Regards </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ <a class="userlink"
+ href="/u/117247621122305601547/">zhili...@gmail.com</a>
+
+,
+ 
+ </span>
+ <span class="date" title="Thu Jul 21 23:35:48 2011">Jul 21, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>How to make sure my webserver has the proper rights to access the pictures? </p><p>Thanks! </p><p>Regards </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ <a class="userlink"
+ href="/u/100479486496420900262/">burningn...@gmail.com</a>
+
+,
+ 
+ </span>
+ <span class="date" title="Wed Nov 30 21:53:07 2011">Nov 30, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>hi I got an Assertion failure when executing the following cmd: ~/fire-cbir/bin/extractcolorhistograms --color --images ~/fire-img/<strong>.jpg </strong></p><p>The Error msg is: (10) [FeatureExtractors/extractcolorhistogram.cpp:93:main] Processing &#x27;/home/zxj/fire-img/001.jpg&#x27; (1/101). extractcolorhistogram: magick/semaphore.c:525: LockSemaphoreInfo<a href="/p/fire-cbir/w/edit/LockSemaphoreInfo">?</a>: Assertion `semaphore_info != (SemaphoreInfo<a href="/p/fire-cbir/w/edit/SemaphoreInfo">?</a> <strong>) ((void </strong>)0)&#x27; failed. Aborted </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ <a class="userlink"
+ href="/u/100479486496420900262/">burningn...@gmail.com</a>
+
+,
+ 
+ </span>
+ <span class="date" title="Thu Dec  1 00:09:33 2011">Dec 1, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>It seems something wrong with the ImageMagcik<a href="/p/fire-cbir/w/edit/ImageMagcik">?</a>. Anyone know how to fix this issue? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+ <a class="userlink"
+ href="/u/114688105057092170239/">zbzhengb...@gmail.com</a>
+
+,
+ 
+ </span>
+ <span class="date" title="Mon Apr  9 19:41:42 2012">Apr 9, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>hi,guys,I come across a problem when I compile FIRE using the cmd &quot;make&quot;: </p><p>/usr/bin/ld: lib//libRetriever.a(retriever.o): undefined reference to symbol &#x27;omp_get_num_threads@@OMP_1.0&#x27; /usr/bin/ld: note: &#x27;omp_get_num_threads@@OMP_1.0&#x27; is defined in DSO /usr/lib/libgomp.so.1 so try adding it to the linker command line /usr/lib/libgomp.so.1: could not read symbols: Invalid operation collect2: error: ld returned 1 exit status make: <strong></strong><strong> [bin//fire] Error 1 </strong></p><p>my os is ARCH 32bit.Google says that because my os is 32bit while the program should be compiled   on 64bit os.I don&#x27;t know if it is true.Anyone who have compiled it can help me? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ 
+ <div id="commentform">
+ <form action="../w/detail.do" method="post">
+ <table>
+ <tr><td class="vt">
+ <input type="hidden" name="pagename" value="FIREUbuntu104" >
+ <input type="hidden" name="token" value="dEhhYsaPA8-bJ6KLD1I4fCl-mJY:1345398268373" >
+ <div class="graytext" style="float: right;">
+ Hint: You can use <a href="http://code.google.com/p/support/wiki/WikiSyntax">Wiki Syntax.</a>
+ </div>
+ <div>Enter a comment:</div>
+ <textarea name="content" rows="6" cols="100"></textarea><br><br>
+ <input type="submit" name="submit" value="Submit" >
+ </td>
+ </table>
+ </form>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="FIREUbuntu104" >
+ <input type="hidden" name="token" value="dEhhYsaPA8-bJ6KLD1I4fCl-mJY:1345398268373" >
+ </form>
+
+
+ <script src="http://www.gstatic.com/codesite/ph/8909294867742213046/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/8909294867742213046/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/8909294867742213046/js/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/8909294867742213046/js/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+ <script type="text/javascript">_CS_reportToCsi();</script>
+ 
+ </body>
+</html>
+
+
